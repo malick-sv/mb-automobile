@@ -1,6 +1,6 @@
 document.getElementById("formulaire").addEventListener("submit", function (e) {
   e.preventDefault();
-  
+
   const nom = document.getElementById("nom").value;
   const tel = document.getElementById("telephone").value;
   const voiture = document.getElementById("voiture").value;

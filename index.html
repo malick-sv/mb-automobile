@@ -10,62 +10,29 @@
 
   <header>
     <h1>MB Automobile</h1>
-    <p>Location de voitures à Dakar - Fann Hock, Corniche</p>
+    <p>Location de voitures à Dakar – Fann Hock, Corniche</p>
   </header>
 
   <section id="voitures">
-    <h2>Nos véhicules</h2>
+    <h2>Nos véhicules disponibles</h2>
     <div class="car-list">
-
-      <div class="car">
-        <img src="images/elantra.jpg" alt="Hyundai Elantra 2015">
-        <p>Hyundai Elantra 2015 – 25 000 FCFA</p>
-      </div>
-
-      <div class="car">
-        <img src="images/fusion.jpg" alt="Ford Fusion 2017">
-        <p>Ford Fusion 2017 – 30 000 FCFA</p>
-      </div>
-
-      <div class="car">
-        <img src="images/3008.jpg" alt="Peugeot 3008 2017">
-        <p>Peugeot 3008 2017 – 30 000 FCFA</p>
-      </div>
-
-      <div class="car">
-        <img src="images/grandeur.jpg" alt="Hyundai Grandeur">
-        <p>Hyundai Grandeur – 35 000 FCFA</p>
-      </div>
-
-      <div class="car">
-        <img src="images/escape.jpg" alt="Ford Escape 2019">
-        <p>Ford Escape 2019 – 35 000 FCFA</p>
-      </div>
-
-      <div class="car">
-        <img src="images/rav4.jpg" alt="Toyota RAV4 2020">
-        <p>Toyota RAV4 2020 – 35 000 FCFA</p>
-      </div>
-
-      <div class="car">
-        <img src="images/cx5.jpg" alt="Mazda CX-5 2018">
-        <p>Mazda CX-5 2018 – 30 000 FCFA</p>
-      </div>
-
+      <div class="car"><img src="images/elantra.jpg"><p>Hyundai Elantra 2015 – 25 000 FCFA</p></div>
+      <div class="car"><img src="images/fusion.jpg"><p>Ford Fusion 2017 – 30 000 FCFA</p></div>
+      <div class="car"><img src="images/3008.jpg"><p>Peugeot 3008 2017 – 30 000 FCFA</p></div>
+      <div class="car"><img src="images/grandeur.jpg"><p>Hyundai Grandeur – 35 000 FCFA</p></div>
+      <div class="car"><img src="images/escape.jpg"><p>Ford Escape 2019 – 35 000 FCFA</p></div>
+      <div class="car"><img src="images/rav4.jpg"><p>Toyota RAV4 2020 – 35 000 FCFA</p></div>
+      <div class="car"><img src="images/cx5.jpg"><p>Mazda CX-5 2018 – 30 000 FCFA</p></div>
     </div>
   </section>
 
   <section id="reservation">
-    <h2>Formulaire de réservation</h2>
+    <h2>Réserver un véhicule</h2>
     <form id="formulaire">
-      <label>Nom :</label>
-      <input type="text" id="nom" required />
-
-      <label>Téléphone :</label>
-      <input type="tel" id="telephone" required />
-
-      <label>Voiture souhaitée :</label>
+      <input type="text" id="nom" placeholder="Votre nom" required />
+      <input type="tel" id="telephone" placeholder="Votre téléphone" required />
       <select id="voiture" required>
+        <option value="">Choisir un véhicule</option>
         <option>Hyundai Elantra 2015</option>
         <option>Ford Fusion 2017</option>
         <option>Peugeot 3008 2017</option>
@@ -74,24 +41,28 @@
         <option>Toyota RAV4 2020</option>
         <option>Mazda CX-5 2018</option>
       </select>
-
-      <label>Date de début :</label>
       <input type="date" id="dateDebut" required />
-
-      <label>Date de fin :</label>
       <input type="date" id="dateFin" required />
-
-      <button type="submit">Réserver</button>
+      <button type="submit">Réserver maintenant</button>
     </form>
     <p id="confirmation"></p>
   </section>
 
+  <section id="contact">
+    <h2>Où nous trouver</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.0738660716176!2d-17.452365924124986!3d14.682912275450085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f808f502bb%3A0xf4d30f61b5f87231!2sFann%20Hock%2C%20Dakar!5e0!3m2!1sfr!2ssn!4v1720456576591!5m2!1sfr!2ssn"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
   <footer>
-    <p>📍 MB Automobile - Fann Hock, Corniche - Dakar</p>
+    <p>📍 MB Automobile – Fann Hock, Corniche – Dakar</p>
     <p>📞 Téléphone / WhatsApp : +221 76 502 41 60</p>
   </footer>
 
-  <!-- 🔘 Bouton WhatsApp -->
   <a href="https://wa.me/221765024160" target="_blank" id="whatsapp-btn">
     💬 Réserver via WhatsApp
   </a>
