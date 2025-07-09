@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MB Automobile - Location de voiture à Dakar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>MB Automobile</h1>
+    <p>Location de voitures à Dakar - Fann Hock, Corniche</p>
+  </header>
+
+  <section id="voitures">
+    <h2>Nos véhicules</h2>
+    <div class="car-list">
+
+      <div class="car">
+        <img src="images/elantra.jpg" alt="Hyundai Elantra 2015">
+        <p>Hyundai Elantra 2015 – 25 000 FCFA</p>
+      </div>
+
+      <div class="car">
+        <img src="images/fusion.jpg" alt="Ford Fusion 2017">
+        <p>Ford Fusion 2017 – 30 000 FCFA</p>
+      </div>
+
+      <div class="car">
+        <img src="images/3008.jpg" alt="Peugeot 3008 2017">
+        <p>Peugeot 3008 2017 – 30 000 FCFA</p>
+      </div>
+
+      <div class="car">
+        <img src="images/grandeur.jpg" alt="Hyundai Grandeur">
+        <p>Hyundai Grandeur – 35 000 FCFA</p>
+      </div>
+
+      <div class="car">
+        <img src="images/escape.jpg" alt="Ford Escape 2019">
+        <p>Ford Escape 2019 – 35 000 FCFA</p>
+      </div>
+
+      <div class="car">
+        <img src="images/rav4.jpg" alt="Toyota RAV4 2020">
+        <p>Toyota RAV4 2020 – 35 000 FCFA</p>
+      </div>
+
+      <div class="car">
+        <img src="images/cx5.jpg" alt="Mazda CX-5 2018">
+        <p>Mazda CX-5 2018 – 30 000 FCFA</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="reservation">
+    <h2>Formulaire de réservation</h2>
+    <form id="formulaire">
+      <label>Nom :</label>
+      <input type="text" id="nom" required />
+
+      <label>Téléphone :</label>
+      <input type="tel" id="telephone" required />
+
+      <label>Voiture souhaitée :</label>
+      <select id="voiture" required>
+        <option>Hyundai Elantra 2015</option>
+        <option>Ford Fusion 2017</option>
+        <option>Peugeot 3008 2017</option>
+        <option>Hyundai Grandeur</option>
+        <option>Ford Escape 2019</option>
+        <option>Toyota RAV4 2020</option>
+        <option>Mazda CX-5 2018</option>
+      </select>
+
+      <label>Date de début :</label>
+      <input type="date" id="dateDebut" required />
+
+      <label>Date de fin :</label>
+      <input type="date" id="dateFin" required />
+
+      <button type="submit">Réserver</button>
+    </form>
+    <p id="confirmation"></p>
+  </section>
+
+  <footer>
+    <p>📍 MB Automobile - Fann Hock, Corniche - Dakar</p>
+    <p>📞 Téléphone / WhatsApp : +221 76 502 41 60</p>
+  </footer>
+
+  <!-- 🔘 Bouton WhatsApp -->
+  <a href="https://wa.me/221765024160" target="_blank" id="whatsapp-btn">
+    💬 Réserver via WhatsApp
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
