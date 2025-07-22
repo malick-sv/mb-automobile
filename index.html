@@ -159,10 +159,18 @@
     const showSlide = (i) => {
       slides.forEach((slide, idx) => {
         slide.classList.remove('active');
-        if (idx === i) slide.classList.add('active');
+        slide.style.display = 'none';
+        if (idx === i) {
+          slide.classList.add('active');
+          slide.style.display = 'block';
+        }
       });
     };
 
+    // Affichage initial
+    showSlide(index);
+
+    // Boutons manuel
     slider.querySelector('.prev').addEventListener('click', () => {
       index = (index - 1 + slides.length) % slides.length;
       showSlide(index);
@@ -173,9 +181,10 @@
       showSlide(index);
     });
 
-    showSlide(index);
+    // ⏱️ Défilement automatique toutes les 4 secondes
+    setInterval(() => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    }, 4000);
   });
 </script>
-<script src="script.js"></script>
-</body>
-</html>
